@@ -7,6 +7,12 @@ import ErrorCard from "./components/ErrorCard";
 
 import Confetti from "react-confetti";
 
+import animalsBg from "./assets/animals.jpg";
+import foodBg from "./assets/food.jpg";
+import travelBg from "./assets/travel.jpg";
+import objectsBg from "./assets/objects.jpg";
+import symbolsBg from "./assets/symbols.jpg";
+
 export default function App() {
   const initialFormData = { category: "animals-and-nature", number: 10 };
 
@@ -38,13 +44,13 @@ export default function App() {
   }, [matchedCards]);
 
   const categoryBackgrounds = {
-    "animals-and-nature": "url('/assets/animals.jpg')",
-    "food-and-drink": "url('/assets/food.jpg')",
-    "travel-and-places": "url('/assets/travel.jpg')",
+    "animals-and-nature": `url(${animalsBg})`,
+    "food-and-drink": `url(${foodBg})`,
+    "travel-and-places": `url(${travelBg})`,
     // prettier-ignore
-    "objects": "url('/assets/objects.jpg')",
+    "objects": `url(${objectsBg})`,
     // prettier-ignore
-    "symbols": "url('/assets/symbols.jpg')",
+    "symbols": `url(${symbolsBg})`,
   };
 
   useEffect(() => {
