@@ -39,12 +39,12 @@ export default function App() {
 
   const categoryBackgrounds = {
     "animals-and-nature": "url('/src/assets/animals.jpg')",
-    "food-and-drink": "url('./assets/food.jpg')",
-    "travel-and-places": "url('./assets/travel.jpg')",
+    "food-and-drink": "url('/src/assets/food.jpg')",
+    "travel-and-places": "url('/src/assets/travel.jpg')",
     // prettier-ignore
-    "objects": "url('./assets/objects.jpg')",
+    "objects": "url('/src/assets/objects.jpg')",
     // prettier-ignore
-    "symbols": "url('./assets/symbols.jpg')",
+    "symbols": "url('/src/assets/symbols.jpg')",
   };
 
   useEffect(() => {
