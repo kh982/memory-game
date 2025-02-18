@@ -49,7 +49,8 @@ export default function App() {
 
   useEffect(() => {
     document.body.style.backgroundImage =
-      categoryBackgrounds[formData.category] || "none";
+      categoryBackgrounds[formData.category];
+    // || none;
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
   }, [formData.category]);
