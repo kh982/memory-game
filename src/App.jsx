@@ -38,13 +38,13 @@ export default function App() {
   }, [matchedCards]);
 
   const categoryBackgrounds = {
-    "animals-and-nature": "url('/src/assets/animals.jpg')",
-    "food-and-drink": "url('/src/assets/food.jpg')",
-    "travel-and-places": "url('/src/assets/travel.jpg')",
+    "animals-and-nature": "url('/assets/animals.jpg')",
+    "food-and-drink": "url('/assets/food.jpg')",
+    "travel-and-places": "url('/assets/travel.jpg')",
     // prettier-ignore
-    "objects": "url('/src/assets/objects.jpg')",
+    "objects": "url('/assets/objects.jpg')",
     // prettier-ignore
-    "symbols": "url('/src/assets/symbols.jpg')",
+    "symbols": "url('/assets/symbols.jpg')",
   };
 
   useEffect(() => {
